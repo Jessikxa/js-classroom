@@ -38,15 +38,13 @@ function verifyInputs() {
 
   if (password === "") {
     dealErrorFor(passwordElem, "Password cannot be Empty");
-  } 
-  // dealErrorFor(confirmPassword, `Password didn't match`);
-  else {
+  } else {
     dealSuccessFor(passwordElem);
   }
 
   if (confirmPassword === "") {
     dealErrorFor(confirmPasswordElem, "Confirm Password is required");
-  } else if (password != confirmPassword) {
+  } else if (password !== confirmPassword) {
     dealErrorFor(confirmPassword, `Password didn't match`);
   } else {
     dealSuccessFor(confirmPasswordElem);

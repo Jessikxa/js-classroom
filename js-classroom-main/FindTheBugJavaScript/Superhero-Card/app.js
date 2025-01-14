@@ -38,7 +38,7 @@ function getInfo(apiURL) {
       intelligenceEl.innerText = data.powerstats.intelligence;
       strengthEl.innerText = data.powerstats.strength;
       speedEl.innerText = data.powerstats.speed;
-      durabilityEl.innerText = data.powerstats.durability;
+      durabilityEl.innerText = data.powerstats.speed;
       powerEl.innerText = data.powerstats.power;
       combatEl.innerText = data.powerstats.combat;
     })
@@ -48,6 +48,3 @@ function getInfo(apiURL) {
 }
 
 window.addEventListener("load", url);
-
-
-//bij durabilityEl.innerText = data.powerstats.durability was eerst data.powerstats.speed. Daarom waren speed een durability hetzelfde getal
